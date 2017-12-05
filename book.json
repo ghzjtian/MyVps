@@ -1,0 +1,30 @@
+{
+	"gitbook": "2.6.7",
+	"title":"我的 vps 相关信息",
+   	 "author":"JingTianZeng",
+        "description":"记录我的 vps 的相关信息",
+	"plugins": [
+		"tbfed-pagefooter",
+		"splitter",
+		"anchor-navigation-ex@0.1.8"
+	],
+	"pluginsConfig": {
+		"tbfed-pagefooter": {
+			"copyright": "Copyright (c) 2017 Tim",
+			"modify_label": "该文件修订时间:",
+			"modify_format": "YYYY - MM - DD HH: mm: ss"
+		}
+	},
+	"links" : {
+   		 "sidebar" : {
+       		 "Home" : "./index.html"
+    				}
+	},
+	"styles": {
+        "website": "styles/website.css",
+   	 "ebook": "styles/ebook.css",
+   	 "pdf": "styles/pdf.css",
+  	 "mobi": "styles/mobi.css",
+  	  "epub": "styles/epub.css"
+}
+}
