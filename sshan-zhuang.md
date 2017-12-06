@@ -9,7 +9,7 @@
 ###1.添加 ssh key(公钥免密登陆)。
 * 1.ssh 免密登陆教程: http://www.jianshu.com/p/f5a142cf3936
 
-ssh root@45.77.19.219
+ssh root@45.77.19.119
 
 
 
