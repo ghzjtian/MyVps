@@ -27,7 +27,7 @@ echo "deb http://shadowsocks.org/debian stretch main" >> /etc/apt/sources.list
 apt-get install shadowsocks~~
 
 
-For Debian 9 (Stretch)
+* For Debian 9 (Stretch)
 ```
 sudo sh -c 'printf "deb http://deb.debian.org/debian stretch-backports main" > /etc/apt/sources.list.d/stretch-backports.list'
 sudo apt update
