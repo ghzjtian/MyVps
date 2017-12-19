@@ -1,5 +1,6 @@
 #shadowsocks安装
 
+>https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu
 
 ###1、追加软件源
 >debian 9
