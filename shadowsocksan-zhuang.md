@@ -22,10 +22,16 @@ echo "deb http://shadowsocks.org/debian stretch main" >> /etc/apt/sources.list
 
 ###2.然后更新源并安装
 
+
+~~apt-get update
+apt-get install shadowsocks~~
+
 ```
-apt-get update
-apt-get install shadowsocks
+sudo sh -c 'printf "deb http://deb.debian.org/debian stretch-backports main" > /etc/apt/sources.list.d/stretch-backports.list'
+sudo apt update
+sudo apt -t stretch-backports install shadowsocks-libev
 ```
+
 
 ###3.配置 shadowsocks 文件
 ```
