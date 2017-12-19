@@ -2,7 +2,7 @@
 
 ###* 1.SPARK邀请码: https://www.vultr.com/?ref=6891094
 
->id: wyzjtian@163.com
+
 
 
 ###* 2.测试各个机房的 ping ,发现日本的最快.
