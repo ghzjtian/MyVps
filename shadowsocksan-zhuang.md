@@ -56,9 +56,9 @@ root@Tim_s_Server2:~# cat /etc/shadowsocks/config.json
 
 ###4、重启shadowsocks服务
 ```
-/etc/init.d/shadowsocks status
-/etc/init.d/shadowsocks stop
-/etc/init.d/shadowsocks start
+/etc/init.d/shadowsocks-libev status
+/etc/init.d/shadowsocks-libev stop
+/etc/init.d/shadowsocks-libev start
 ```
 
 ###5.MyJapan Server ss二维码
