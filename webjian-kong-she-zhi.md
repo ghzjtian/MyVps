@@ -21,3 +21,5 @@
     ![](/assets/ScreenShot2017-12-21_14.47.52.png)
     * 重启后，查看 info 的结果:
     ![](/assets/ScreenShot2017-12-21_14.49.19.png)
+    
+* 5.下载 Slack,用来收到报警的信息.
