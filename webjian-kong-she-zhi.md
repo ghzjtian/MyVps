@@ -3,6 +3,7 @@
 
 ## 1.DataDog
 >安装教程: https://app.datadoghq.com/signup/agent#debian
+>服务器自动监控: https://www.zhihu.com/question/21073555
 
 #### 注意事项:
 * 1.安装后可能需要几分钟的时间让后台上报事件.
@@ -32,7 +33,9 @@
 ## 2.尝试用 aliyun 的 云计算基础服务/云监控.
 >https://cloudmonitor.console.aliyun.com/index?spm=5176.128766.653105.2.7oB8hC&custom_trace=2017-02-07&callback=/hostmonitor/host#/home/ecs
 
+***
 
+### 3.
 
 
 
