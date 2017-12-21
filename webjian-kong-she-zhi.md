@@ -19,3 +19,5 @@
     ![](/assets/ScreenShot2017-12-21_14.35.05.png)
     * http 实例: 
     ![](/assets/ScreenShot2017-12-21_14.47.52.png)
+    * 重启后，查看 info 的结果:
+    
