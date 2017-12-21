@@ -15,3 +15,7 @@
 
 * 4.加入 TCP/HTTP 的检查(在 /etc/dd-agent/conf.d 文件夹中).
 >https://app.datadoghq.com/monitors#create/network
+    * tcp 实例:
+    ![](/assets/ScreenShot2017-12-21_14.35.05.png)
+    * http 实例: 
+    ![](/assets/ScreenShot2017-12-21_14.47.52.png)
