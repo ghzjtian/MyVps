@@ -9,3 +9,6 @@
 
 * 2.VPS 的主机名(hostname)必须要符合 rfc-1123 的格式.
 >Hostnames must comply with RFC-1123, which permits only "A" to "Z", "a" to "z", "0" to "9", and the hyphen (-).
+
+* 3.debian系统的基本用法:
+>https://docs.datadoghq.com/guides/basic_agent_usage/deb/
