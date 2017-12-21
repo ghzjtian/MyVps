@@ -17,5 +17,5 @@
   * [phpMyAdmin安装](phpmyadminan-zhuang.md)
   * [设置系统时间](she-zhi-xi-tong-shi-jian.md)
 * [域名购买](yu-ming-gou-mai.md)
-
+* [Web监控设置](webjian-kong-she-zhi.md)
 
