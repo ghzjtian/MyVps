@@ -1,7 +1,7 @@
 #Web监控设置
 
 
-### DataDog
+## 1.DataDog
 >安装教程: https://app.datadoghq.com/signup/agent#debian
 
 #### 注意事项:
@@ -24,3 +24,6 @@
     
 * 5.下载 Slack,用来收到报警的信息.
     登录的 email 也可以立刻收到报警的信息.
+    
+    
+## 2.尝试用 aliyun
