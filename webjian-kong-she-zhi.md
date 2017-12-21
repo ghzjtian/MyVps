@@ -1,4 +1,4 @@
-![](/assets/ScreenShot2017-12-21_14.49.19.png)#Web监控设置
+#Web监控设置
 
 
 ### DataDog
@@ -20,4 +20,4 @@
     * http 实例: 
     ![](/assets/ScreenShot2017-12-21_14.47.52.png)
     * 重启后，查看 info 的结果:
-    
+    ![](/assets/ScreenShot2017-12-21_14.49.19.png)
