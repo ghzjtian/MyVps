@@ -1,5 +1,13 @@
 #Web监控设置
+>服务器自动监控: https://www.zhihu.com/question/21073555
 
+## 1.DataDog
+
+## 2.aliyun 的 云计算基础服务/云监控（已在使用）
+
+***
+***
+***
 
 ## 1.DataDog
 >安装教程: https://app.datadoghq.com/signup/agent#debian
