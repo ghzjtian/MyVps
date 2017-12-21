@@ -13,5 +13,5 @@
 * 3.debian系统的基本用法:
 >https://docs.datadoghq.com/guides/basic_agent_usage/deb/
 
-* 4.加入 TCP/HTTP 的检查.
+* 4.加入 TCP/HTTP 的检查(在 /etc/dd-agent/conf.d 文件夹中).
 >https://app.datadoghq.com/monitors#create/network
