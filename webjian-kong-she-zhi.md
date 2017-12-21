@@ -26,7 +26,7 @@
     登录的 email 也可以立刻收到报警的信息.
     
     
-## 2.尝试用 aliyun
->https://cloudmonitor.console.aliyun.com/index?spm=5176.128766.653105.2.7oB8hC&custom_trace=2017-02-07&callback=/hostmonitor/host#/hostmonitor/host
+## 2.尝试用 aliyun 的云监控.
+>https://cloudmonitor.console.aliyun.com/index?spm=5176.128766.653105.2.7oB8hC&custom_trace=2017-02-07&callback=/hostmonitor/host#/home/ecs
 
 
