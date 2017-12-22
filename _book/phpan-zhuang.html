@@ -65,7 +65,7 @@
         data-chapter-title="php安装"
         data-filepath="phpan-zhuang.md"
         data-basepath="."
-        data-revision="Mon Nov 13 2017 14:19:56 GMT+0800 (CST)"
+        data-revision="Fri Dec 22 2017 09:11:27 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -297,6 +297,36 @@
             
         </li>
     
+        <li class="chapter " data-level="2.12" data-path="phpmyadminan-zhuang.html">
+            
+                
+                    <a href="./phpmyadminan-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        phpMyAdmin安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="she-zhi-xi-tong-shi-jian.html">
+            
+                
+                    <a href="./she-zhi-xi-tong-shi-jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        设置系统时间
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -312,6 +342,21 @@
                             <b>3.</b>
                         
                         域名购买
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="webjian-kong-she-zhi.html">
+            
+                
+                    <a href="./webjian-kong-she-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Web监控设置
                     </a>
             
             
@@ -354,23 +399,50 @@
 <blockquote>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-8" target="_blank">https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-8</a></p>
 </blockquote>
-<p>1.&#x5B89;&#x88C5;</p>
+<h3 id="1&#x5B89;&#x88C5;">1.&#x5B89;&#x88C5;</h3>
+<h3 id="2&#x542F;&#x52A8;">2.&#x542F;&#x52A8;</h3>
+<h3 id="3&#x914D;&#x7F6E;-php">3.&#x914D;&#x7F6E; php</h3>
+<h3 id="4-&#x914D;&#x7F6E;-phpfpm">4. &#x914D;&#x7F6E; php-fpm</h3>
+<h3 id="5&#x89E3;&#x51B3;-&#x96C5;&#x9ED1;&#x63A2;&#x9488;-&#x5728;-php70-&#x73B0;&#x5B9E;&#x4E0D;&#x5168;&#x7684;&#x95EE;&#x9898;">5.&#x89E3;&#x51B3; &#x96C5;&#x9ED1;&#x63A2;&#x9488; &#x5728; php7.0 &#x73B0;&#x5B9E;&#x4E0D;&#x5168;&#x7684;&#x95EE;&#x9898;.</h3>
+<hr>
+<hr>
+<hr>
+<h3 id="1&#x5B89;&#x88C5;">1.&#x5B89;&#x88C5;</h3>
 <pre><code>apt-get install php5-fpm php5-mysql
-</code></pre><p>2.&#x542F;&#x52A8;</p>
+</code></pre><hr>
+<h3 id="2&#x542F;&#x52A8;">2.&#x542F;&#x52A8;</h3>
 <pre><code>service php7.0-fpm status
 service php7.0-fpm start
 /etc/init.d/php7.0-fpm status
-</code></pre><p>3.&#x914D;&#x7F6E; php</p>
+</code></pre><hr>
+<h3 id="3&#x914D;&#x7F6E;-php">3.&#x914D;&#x7F6E; php</h3>
 <blockquote>
 <p>&#x53C2;&#x8003;: <a href="http://www.jianshu.com/p/997a97605ca0" target="_blank">http://www.jianshu.com/p/997a97605ca0</a></p>
 </blockquote>
 <pre><code>vi /etc/php/7.0/fpm/php.ini
 </code></pre><ul>
-<li>&#x914D;&#x7F6E; php-fpm<pre><code>vi /etc/php/7.0/fpm/pool.d/www.conf
+<li>1.&#x8BA9; php &#x652F;&#x6301; curl(&#x5728;&#x9875;&#x9762;&#x4E2D;&#x5411;&#x5176;&#x5B83;&#x9875;&#x9762;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;)<blockquote>
+<p><a href="http://php.net/manual/en/function.curl-init.php" target="_blank">http://php.net/manual/en/function.curl-init.php</a></p>
+<ul>
+<li>1.&#x5B89;&#x88C5; curl<pre><code># apt-cache search curl
+# apt-get install php7.0-curl
 </code></pre></li>
+<li>2.&#x5220;&#x9664; php.ini &#x6587;&#x4EF6;&#x4E2D;<code>;extension=php_curl.dll</code>&#x524D;&#x9762;&#x7684; ; ,&#x8BA9;&#x5176;&#x652F;&#x6301; curl .
+<img src="assets/ScreenShot2017-11-14_14.12.03.png" alt=""></li>
 </ul>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="4-&#x914D;&#x7F6E;-phpfpm">4* &#x914D;&#x7F6E; php-fpm</h3>
+<pre><code>vi /etc/php/7.0/fpm/pool.d/www.conf
+</code></pre><hr>
+<h3 id="5&#x89E3;&#x51B3;-&#x96C5;&#x9ED1;&#x63A2;&#x9488;-&#x5728;-php70-&#x73B0;&#x5B9E;&#x4E0D;&#x5168;&#x7684;&#x95EE;&#x9898;">5.&#x89E3;&#x51B3; &#x96C5;&#x9ED1;&#x63A2;&#x9488; &#x5728; php7.0 &#x73B0;&#x5B9E;&#x4E0D;&#x5168;&#x7684;&#x95EE;&#x9898;.</h3>
+<blockquote>
+<p><a href="https://haoyu.love/blog280.html" target="_blank">https://haoyu.love/blog280.html</a></p>
+</blockquote>
 <footer class="page-footer"><span class="copyright">Copyright (c) 2017 Tim all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;:
-2017 - 11 - 13 09: 49: 13
+2017 - 11 - 14 15: 30: 30
 </span></footer>
                     
                     </section>

@@ -65,7 +65,7 @@
         data-chapter-title="shadowsocks安装"
         data-filepath="shadowsocksan-zhuang.md"
         data-basepath="."
-        data-revision="Mon Nov 13 2017 14:19:56 GMT+0800 (CST)"
+        data-revision="Fri Dec 22 2017 09:11:27 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -297,6 +297,36 @@
             
         </li>
     
+        <li class="chapter " data-level="2.12" data-path="phpmyadminan-zhuang.html">
+            
+                
+                    <a href="./phpmyadminan-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        phpMyAdmin安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="she-zhi-xi-tong-shi-jian.html">
+            
+                
+                    <a href="./she-zhi-xi-tong-shi-jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        设置系统时间
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -312,6 +342,21 @@
                             <b>3.</b>
                         
                         域名购买
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="webjian-kong-she-zhi.html">
+            
+                
+                    <a href="./webjian-kong-she-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Web监控设置
                     </a>
             
             
@@ -351,6 +396,9 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="shadowsocks&#x5B89;&#x88C5;">shadowsocks&#x5B89;&#x88C5;</h1>
+<blockquote>
+<p><a href="https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu" target="_blank">https://github.com/shadowsocks/shadowsocks-libev#debian--ubuntu</a></p>
+</blockquote>
 <h3 id="1&#x3001;&#x8FFD;&#x52A0;&#x8F6F;&#x4EF6;&#x6E90;">1&#x3001;&#x8FFD;&#x52A0;&#x8F6F;&#x4EF6;&#x6E90;</h3>
 <blockquote>
 <p>debian 9</p>
@@ -364,16 +412,22 @@ Release:    9.1
 Codename:    stretch
 </code></pre><pre><code>echo &quot;deb http://shadowsocks.org/debian stretch main&quot; &gt;&gt; /etc/apt/sources.list
 </code></pre><h3 id="2&#x7136;&#x540E;&#x66F4;&#x65B0;&#x6E90;&#x5E76;&#x5B89;&#x88C5;">2.&#x7136;&#x540E;&#x66F4;&#x65B0;&#x6E90;&#x5E76;&#x5B89;&#x88C5;</h3>
-<pre><code>apt-get update
-apt-get install shadowsocks
-</code></pre><h3 id="3&#x914D;&#x7F6E;-shadowsocks-&#x6587;&#x4EF6;">3.&#x914D;&#x7F6E; shadowsocks &#x6587;&#x4EF6;</h3>
+<p><del>apt-get update
+apt-get install shadowsocks</del></p>
+<ul>
+<li>For Debian 9 (Stretch)<pre><code>sudo sh -c &apos;printf &quot;deb http://deb.debian.org/debian stretch-backports main&quot; &gt; /etc/apt/sources.list.d/stretch-backports.list&apos;
+sudo apt update
+sudo apt -t stretch-backports install shadowsocks-libev
+</code></pre></li>
+</ul>
+<h3 id="3&#x914D;&#x7F6E;-shadowsocks-&#x6587;&#x4EF6;">3.&#x914D;&#x7F6E; shadowsocks &#x6587;&#x4EF6;</h3>
 <pre><code>root@Tim_s_Server2:~# cat /etc/shadowsocks/config.json
 {
-    &quot;server&quot;:&quot;45.77.16.218&quot;,
+    &quot;server&quot;:&quot;1.1.1.1&quot;,
     &quot;server_port&quot;:8388,
     &quot;local_address&quot;: &quot;127.0.0.1&quot;,
     &quot;local_port&quot;:1080,
-    &quot;password&quot;:&quot;myss1112300&quot;,
+    &quot;password&quot;:&quot;111111&quot;,
     &quot;timeout&quot;:300,
     &quot;method&quot;:&quot;aes-256-cfb&quot;,
     &quot;fast_open&quot;: false,
@@ -381,13 +435,12 @@ apt-get install shadowsocks
     &quot;prefer_ipv6&quot;: false
 }
 </code></pre><h3 id="4&#x3001;&#x91CD;&#x542F;shadowsocks&#x670D;&#x52A1;">4&#x3001;&#x91CD;&#x542F;shadowsocks&#x670D;&#x52A1;</h3>
-<pre><code>/etc/init.d/shadowsocks status
-/etc/init.d/shadowsocks stop
-/etc/init.d/shadowsocks start
+<pre><code>/etc/init.d/shadowsocks-libev status
+/etc/init.d/shadowsocks-libev stop
+/etc/init.d/shadowsocks-libev start
 </code></pre><h3 id="5myjapan-server-ss&#x4E8C;&#x7EF4;&#x7801;">5.MyJapan Server ss&#x4E8C;&#x7EF4;&#x7801;</h3>
-<p><img src="assets/ScreenShot2017-11-09_11.12.49.png" alt=""></p>
 <footer class="page-footer"><span class="copyright">Copyright (c) 2017 Tim all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;:
-2017 - 11 - 09 11: 15: 10
+2017 - 12 - 19 11: 47: 16
 </span></footer>
                     
                     </section>
