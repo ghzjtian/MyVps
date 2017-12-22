@@ -41,6 +41,9 @@
 ## 2.aliyun 的 云计算基础服务/云监控（已在使用）.<a name="aliyun"/>
 >https://cloudmonitor.console.aliyun.com/index?spm=5176.128766.653105.2.7oB8hC&custom_trace=2017-02-07&callback=/hostmonitor/host#/home/ecs
 
+* 1.报警服务启用 '报警模板' 的去监控.
+
+
 ***
 
 
